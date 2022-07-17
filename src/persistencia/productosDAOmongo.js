@@ -1,7 +1,7 @@
-const { conexionMongoDB , disconnectMongoDB } = require('../daos/mongo/mongodb');
-const schemaProducto = require('../modal/productos');
+const { conexionMongoDB , disconnectMongoDB } = require('../modal/conexion/mongo/mongodb');
+const schemaProducto = require('../modal/modalProductos');
 
-class Productos {
+class ProductosDAOmongo {
 
   async save(producto) {
     try {
@@ -52,13 +52,11 @@ class Productos {
     }
   }
 
-
-
   async deleteById(id) {
     try {      
       await conexionMongoDB()
       const data = await schemaProducto.findOneAndDelete({"producto.id":Number(id)});
-      disconnectMongoDB()
+      await disconnectMongoDB()
       return 'Product was deleted successfully';
     } catch (error) {
       throw Error(error.message);
@@ -77,4 +75,4 @@ class Productos {
   }
 }
 
-module.exports = Productos;
+module.exports = ProductosDAOmongo;

@@ -1,5 +1,3 @@
-// token bCrypt
-
 const bCrypt = require('bcrypt')
 
 

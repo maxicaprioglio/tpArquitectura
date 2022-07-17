@@ -1,8 +1,9 @@
 const express = require('express');
-const { chequeoAuteExistente , chequeoAutentificacion } = require('../funciones/funcAute')
+const {chequeoAutentificacion } = require('../funciones/funcAute')
 const perfilRouter = express.Router();
-const Usuario = require('../contenedor/usuarios')
-const usuario = new Usuario()
+const UsuarioDAOFile = require('../persistencia/usuarioDAOfs')
+const Usuario = new UsuarioDAOFile()
+
 
 /*-----------multer para traer archivos ------------*/
 
@@ -20,8 +21,7 @@ const upload = multer({ storage: storage })
 
 /*----rutas ----*/
 perfilRouter.get('/', chequeoAutentificacion, (req, res) => {
-  
-    res.render('perfil')
+  res.render('perfil',nombre)
 })
 
 perfilRouter.post('/', chequeoAutentificacion, upload.single('miArchivo'), async (req, res, next) => {
@@ -33,7 +33,7 @@ perfilRouter.post('/', chequeoAutentificacion, upload.single('miArchivo'), async
       error.httpStatusCode = 400
       return next(error)
     }
-    await usuario.agregarFoto(fileName,user)
+    await Usuario.agregarFoto(fileName,user)
     res.redirect('home')
   })
 

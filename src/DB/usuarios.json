@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1",
+    "nombre": "maxi",
+    "email": "maxi@m",
+    "password": "m",
+    "direccion": "chile",
+    "edad": "6345646",
+    "telefono": "6345646",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 54165.61121909234,
+    "nombre": "usuarioNombre",
+    "email": "usuario@email",
+    "password": "m",
+    "direccion": "eccion",
+    "edad": "123123123123",
+    "telefono": 123123123,
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 90230.7845198532,
+    "nombre": "usuarioNombre",
+    "email": "usuario@email",
+    "password": "m",
+    "direccion": "eccion",
+    "edad": "123123123123",
+    "telefono": 123123123,
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 86064.92854128174,
+    "nombre": "usuarioNombre",
+    "email": "usuario@email",
+    "password": "m",
+    "direccion": "eccion",
+    "edad": "123123123123",
+    "telefono": 123123123,
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 31678.559889588163,
+    "nombre": "maxi",
+    "password": "$2b$10$860JEGCs4eNBMNuEFbbXje9P2Ynwb1aGYX7bKggvGJFYvx.TdTOPO",
+    "direccion": "chile",
+    "edad": "2452-02-12",
+    "telefono": "546456456",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 1871.8977157151428,
+    "nombre": "maxi",
+    "password": "$2b$10$iQjU7Dv5.GeO3KlRUzI.z.iDc/dJiaH..9a7ZiRz9ITYv8kwFw/l.",
+    "direccion": "chile",
+    "edad": "1860-02-20",
+    "telefono": "23452354",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 88328.42571398945,
+    "nombre": "maxi",
+    "password": "$2b$10$vNsXjO8rSm9kO6fIh4aGS.3GK9YiOuWO9tH1DGPpaBBOE3WpHrN4m",
+    "direccion": "chile",
+    "edad": "1860-02-20",
+    "telefono": "23452354",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 89514.5577377741,
+    "nombre": "juahanna",
+    "password": "$2b$10$VSB8wOIkalDMaXK.29rS0eIPf3M579b0.sazDHo3Ejxq2WZh1iaDi",
+    "direccion": "arebalo",
+    "edad": "1985-12-23",
+    "telefono": "1515151515151",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 76035.39770527076,
+    "nombre": "johana",
+    "password": "$2b$10$wfduYFncTdY8W3XLzbXHie/epkAiVphFLdni1h.00gyYqZY/DjCe.",
+    "direccion": "dfsdf",
+    "edad": "3344-04-23",
+    "telefono": "234324234",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 51809.234386975426,
+    "nombre": "johana",
+    "password": "$2b$10$TB59mNgFElNd2oVRJJ9BWebhtx5RtR78kCB37/XLrsrw8DjoJgUqK",
+    "direccion": "dfsdf",
+    "edad": "3344-04-23",
+    "telefono": "234324234",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 90318.11642817287,
+    "nombre": "sdasd",
+    "password": "$2b$10$FHYlu3uYRHgtlSxeFBMP6ueOtSaTO.fjt384h/ePdJWlb6M4YdjoO",
+    "direccion": "asdfasdf",
+    "edad": "0344-02-23",
+    "telefono": "21312321",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 69341.75613331133,
+    "nombre": "juhii",
+    "password": "$2b$10$LGqGP4m0UPrVV8CS6HdE4uX4IjbykAnNmB/JeklkZzDEKF4Dgzpe.",
+    "direccion": "sdasd",
+    "edad": "0133-02-23",
+    "telefono": "12321323",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 92315.66816228871,
+    "nombre": "maxi",
+    "password": "$2b$10$k/eA05nG8epZiAT6chchaOpLwhwlW7Wz1NBKbLxZ5t1kTKTqrVP5m",
+    "direccion": "dfsdf",
+    "edad": "0155-02-12",
+    "telefono": "45345",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 48762.126398226304,
+    "nombre": "j@j",
+    "password": "$2b$10$eZS7BRo5DIawPPLgeTNPPORSE6xmEh1T3BucCtAa3yk1f4XmXxPx6",
+    "direccion": "asdfasf",
+    "edad": "0034-12-23",
+    "telefono": "234552345",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 90878.14683964639,
+    "nombre": "maxi",
+    "email": "maxi@mmm",
+    "password": "$2b$10$avrUfGPOijl.PYV5AOR5/OK0452k/u1nfIb5lG08eoBBZ8y0H0ANK",
+    "direccion": "mmmm",
+    "edad": "1121-05-15",
+    "telefono": "35423423",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 76537.06834217704,
+    "nombre": "maxi",
+    "email": "mamaxi@m",
+    "password": "$2b$10$pn/yMHZkGE6WTPz6Ze3/rO5QtA14.2u9OWGNsb58eKZFErYqsjlk6",
+    "direccion": "masm",
+    "edad": "0001-01-01",
+    "telefono": "1",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 34968.565148291345,
+    "nombre": "maxi",
+    "email": "mamaxi@mm",
+    "password": "$2b$10$FAPOlDDaB4d7lD5QuxqURO1LUjj6.Mgqf.xODKY/8a8CeERZrCzKi",
+    "direccion": "mm",
+    "edad": "0011-01-01",
+    "telefono": "1",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 42537.40621544009,
+    "nombre": "maxi",
+    "email": "mmmaxi@m",
+    "password": "$2b$10$XglpevOSZoGZcAteUOiwsuyjdZi3Zj2U9o8a40A5Rmai3PWtidx66",
+    "direccion": "m",
+    "edad": "43434-03-30",
+    "telefono": "45345345",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 64540.754388425325,
+    "nombre": "223123",
+    "email": "1m@m",
+    "password": "$2b$10$2Gc63bxaVoAA.SIhgGo4Zujr.uZLkqkSO7cHyIaUWhxpQXCGLfSsa",
+    "direccion": "mm",
+    "edad": "0023-03-23",
+    "telefono": "32323",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 66641.57858348485,
+    "nombre": "maxi",
+    "email": "maxii@m",
+    "password": "$2b$10$mdxAHeVjmDWukvooFhOvruvgg/SeYixU5yhNO58PWxR9dTg.KjmzS",
+    "direccion": "xhile",
+    "edad": "5455-05-04",
+    "telefono": "234234234234",
+    "foto": "perfil.jpg"
+  },
+  {
+    "id": 59587.89099670425,
+    "nombre": "terere",
+    "email": "t@m",
+    "password": "$2b$10$1nPU.rgxOyXzocdPXuCNrOnIWfV4eI/bpXmPcmpfsbKeYyuhi1twO",
+    "direccion": "chile",
+    "edad": "0555-05-04",
+    "telefono": "234234234",
+    "foto": "perfil.jpg"
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "id": 12343,
+    "timestamp": "34234234234234",
+    "productos": []
+  },
+  {
+    "id": 39434.40097036259,
+    "timestamp": "2022-07-17T18:14:18.873Z",
+    "productos": []
+  },
+  {
+    "id": 86528824,
+    "timestamp": "2022-07-17T18:15:36.450Z",
+    "productos": [
+      {
+        "id": "1",
+        "nombre": "casa",
+        "precio": 12,
+        "foto": "producto.jpg",
+        "descripcion": "es muy bueno todo"
+      }
+    ]
+  },
+  {
+    "id": 94908987,
+    "timestamp": "2022-07-17T18:17:40.066Z",
+    "productos": []
+  },
+  {
+    "id": 208581221,
+    "timestamp": "2022-07-17T18:19:35.638Z",
+    "productos": []
+  },
+  {
+    "id": 887872179,
+    "timestamp": "2022-07-17T18:32:03.211Z",
+    "productos": []
+  },
+  {
+    "id": 875931291,
+    "timestamp": "2022-07-17T18:35:07.911Z",
+    "productos": []
+  }
+]

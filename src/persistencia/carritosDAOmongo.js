@@ -1,11 +1,11 @@
-const {conexionMongoDB,disconnectMongoDB} = require('../daos/mongo/mongodb');
-const schemaCarritos = require('../modal/carritos');
+const {conexionMongoDB,disconnectMongoDB} = require('../modal/conexion/mongo/mongodb');
+const schemaCarritos = require('../modal/modalCarritos');
 
-class Carrito {
+class CarritosDAOmongo {
   //ok
   async createCarrito() {
     try {
-      await conexionMongoDB();
+      conexionMongoDB();
       const data = await schemaCarritos.create({
         productos: []
         });
@@ -18,7 +18,7 @@ class Carrito {
 //ok
   async buscarCarrito(idCarrito) {
     try {
-      await conexionMongoDB();
+      conexionMongoDB();
       const data = await schemaCarritos.findById(idCarrito)
       await disconnectMongoDB();
       const productos = data.productos
@@ -32,7 +32,7 @@ class Carrito {
 // ok
   async addProductToCart(idCart, idProduct) {
     try {
-      await conexionMongoDB()
+      conexionMongoDB()
         await schemaCarritos.updateOne({ _id: idCart }, { $push: { productos: idProduct } })
       await disconnectMongoDB();
         return 'se agrego el producto correctamente';
@@ -43,7 +43,7 @@ class Carrito {
 //ok
   async deleteCartById(id) {
     try {
-      await conexionMongoDB()
+      conexionMongoDB()
       await schemaCarritos.findByIdAndRemove(id);
       await disconnectMongoDB();
       return 'El carrito se borro con exito';
@@ -54,9 +54,10 @@ class Carrito {
 //ok
   async deleteProductCart(idCart, idProduct) {
     try {
-      await conexionMongoDB()
+      conexionMongoDB()
       await schemaCarritos.updateOne({ _id: idCart }, { $pull: { productos: idProduct } })
       await disconnectMongoDB();
+      return 'se elimino'
     } catch (error) {
       throw Error(error.message);
     }
@@ -64,4 +65,4 @@ class Carrito {
 
 }
 
-module.exports = Carrito
+module.exports = CarritosDAOmongo

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "nombre": "casa",
+    "precio": 12,
+    "foto": "producto.jpg",
+    "descripcion": "es muy bueno todo"
+  },
+  {
+    "id": "2",
+    "nombre": "regla",
+    "precio": 1223,
+    "foto": "producto.jpg",
+    "descripcion": "sepasa de bueno, es muy bueno todo"
+  }
+]

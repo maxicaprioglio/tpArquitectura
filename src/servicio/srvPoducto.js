@@ -1,11 +1,10 @@
-const Productos = require('../contenedor/productos');
-const Producto = new Productos();
-const Carrito = require('../contenedor/carritos');
-const carrito = new Carrito()
+const ProductosDAOFile = require('../persistencia/productosDAOfs');
+const Productos = new ProductosDAOFile()
+const CarritosDAOFile = require('../persistencia/carritosDAOfs');
+const Carrito = new CarritosDAOFile()
 
-
-module.exports = {
-  createProduct: async (req, res) => {
+const srvProducto = {
+  createProductSrv: async (req, res) => {
     try {
       const prod = {producto:{
         id: Math.floor(Math.random() * 1000000000), ///hacer que no se repita
@@ -14,7 +13,7 @@ module.exports = {
         foto: req.body.foto,
         descripcion: req.body.descripcion
       }}
-      const id = await Producto.save(prod);
+      const id = await Productos.save(prod);
       res.redirect('/api/home/carga')
     } catch (error) {
       res.status(500).send({
@@ -23,16 +22,17 @@ module.exports = {
       });
     }
   },
-  getProducts: async (req, res) => { 
+  getProductsSrv: async (req, res) => { 
     try {
-      const productos = await Producto.getAll()
+      const productos = await Productos.getAll()
       const nombre=req.user.nombre;
       //creo el carrito 
       if (!req.session.carrito){
-        let carritoId = await carrito.createCarrito()
+        let carritoId = await Carrito.createCarrito()
         req.session.carrito = carritoId
       }
       let idCart=req.session.carrito;
+      console.log(idCart)
       const foto= req.user.foto
       res.render('home',{nombre,productos, idCart, foto})
     } catch (error) {
@@ -42,10 +42,10 @@ module.exports = {
       });
     }
   },
-  getProductById: async (req, res) => {
+  getProductByIdSrv: async (req, res) => {
     const idProduct = req.params.id;
     try {
-      const data = await Producto.getById(idProduct);
+      const data = await Productos.getById(idProduct);
       res.status(200).send({
         status: 200,
         data,
@@ -58,11 +58,11 @@ module.exports = {
       });
     }
   },
-  updateProductById: async (req, res) => {
+  updateProductByIdSrv: async (req, res) => {
     const idProduct = req.params.id;
     const product = req.body;
     try {
-      await Producto.updateById(idProduct, product);
+      await Productos.updateById(idProduct, product);
       res.status(200).send({
         status: 200,
         data: {
@@ -77,10 +77,10 @@ module.exports = {
       });
     }
   },
-  deleteProductById: async (req, res) => {
+  deleteProductByIdSrv: async (req, res) => {
     const idProduct = req.params.id;
     try {
-      await Producto.deleteById(idProduct);
+      await Productos.deleteById(idProduct);
       res.status(200).send({
         status: 200,
         data: {
@@ -96,3 +96,5 @@ module.exports = {
     }
   }
 };
+
+module.exports = srvProducto

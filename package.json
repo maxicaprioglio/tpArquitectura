@@ -1,10 +1,9 @@
 {
   "name": "terceraentrega",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -26,5 +25,15 @@
     "passport-local": "^1.0.0",
     "socket.io": "^4.5.1",
     "twilio": "^3.78.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxicaprioglio/tpArquitectura.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxicaprioglio/tpArquitectura/issues"
+  },
+  "homepage": "https://github.com/maxicaprioglio/tpArquitectura#readme",
+  "description": ""
 }

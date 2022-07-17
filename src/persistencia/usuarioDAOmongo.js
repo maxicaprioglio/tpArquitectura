@@ -1,7 +1,8 @@
-const {conexionMongoDB,disconnectMongoDB} = require('../daos/mongo/mongodb');
-const schemaUsuario = require('../modal/usuarios');
+const { conexionMongoDB , disconnectMongoDB } = require('../modal/conexion/mongo/mongodb');
+const schemaUsuario = require('../modal/modalUsuarios');
 
-class Usuario {
+class UsuarioDAOmongo {
+
     async createUsuario(usuario) {
         try {
           await conexionMongoDB();
@@ -12,7 +13,7 @@ class Usuario {
             direccion: usuario.direccion,
             edad: usuario.edad,
             telefono: usuario.telefono,
-            foto: usuario.foto
+            foto: 'perfil.jpg'
           });
           await disconnectMongoDB();
           return data;
@@ -47,4 +48,4 @@ class Usuario {
 
 }
 
-module.exports = Usuario;
+module.exports = UsuarioDAOmongo;

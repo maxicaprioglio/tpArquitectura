@@ -1,10 +1,8 @@
 const express = require('express');
 const cartRouter = express.Router();
 const { chequeoAutentificacion } = require('../funciones/funcAute')
-const {
-    mostrarCarro
-  } = require('../controlador/carrito');
+const srvCarrito = require('../servicio/srvCarrito')
 
-cartRouter.get('/', chequeoAutentificacion, mostrarCarro)
+cartRouter.get('/', chequeoAutentificacion, srvCarrito.mostrarCarroSrv)
 
 module.exports = cartRouter;
