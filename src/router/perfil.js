@@ -21,7 +21,7 @@ const upload = multer({ storage: storage })
 
 /*----rutas ----*/
 perfilRouter.get('/', chequeoAutentificacion, (req, res) => {
-  res.render('perfil',nombre)
+  res.render('perfil',{nombre:req.user.nombre})
 })
 
 perfilRouter.post('/', chequeoAutentificacion, upload.single('miArchivo'), async (req, res, next) => {
