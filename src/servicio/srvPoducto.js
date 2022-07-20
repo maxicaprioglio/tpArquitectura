@@ -32,7 +32,6 @@ const srvProducto = {
         req.session.carrito = carritoId
       }
       let idCart=req.session.carrito;
-      console.log(idCart)
       const foto= req.user.foto
       res.render('home',{nombre,productos, idCart, foto})
     } catch (error) {

@@ -6,7 +6,6 @@ const Carrito = new CarritosDAOFile
 const srvCarrito = {
     mostrarCarroSrv: async (req, res) => {
         try {
-            console.log(req.session.carrito)
             const data = await Carrito.buscarCarrito(req.session.carrito)
             const productos = data;
             const nombre = req.user.nombre;

@@ -87,8 +87,9 @@ app.set('view engine', '.hbs')
   app.use('/api/home', homeRouter);
   app.use('/api/carrito', cartRouter)
   app.use('/api/perfil', perfilRouter);
-  
-  app.use('/',(req, res) => {
+  const {chequeoAuteExistente } = require('./funciones/funcAute')
+
+  app.use('/', chequeoAuteExistente,(req, res) => {
     try {
         res.render('bienvenido')
     } catch (error) {
